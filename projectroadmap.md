@@ -8,6 +8,7 @@
 
 ## Codebase Evaluation
 I evaluated the **udaymistry/Basic-Point-On-Sale-System** repository. 
-
+### Reference Repository
+* **Source:** [udaymistry Basic POS System](https://github.com/udaymistry/Basic-Point-On-Sale-System-)
 * **Findings:** The project uses simple mathematical variables to track item prices and totals. It uses functions to clear the screen and reset totals, which is a logic flow I can adapt.
 * **Course Alignment:** The original code uses `Tkinter` for a windowed interface. I plan to convert this logic to a command line interface using `while` loops, `input()`, and `print()` statements.
