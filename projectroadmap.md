@@ -14,11 +14,13 @@ I evaluated the **udaymistry/Basic-Point-On-Sale-System** repository.
   
 I successfully cloned and executed the **udaymistry/Basic-Point-On-Sale-System** reference code.
 ### Key Technical Findings:
-* [cite_start]**Mathematical Logic:** The system uses a specific function called `CostOfOrder()` to handle all price calculations[cite: 5, 7]. [cite_start]It calculates the subtotal by multiplying item quantities by a fixed float value (e.g., `BurgerPrice * 70.00`)[cite: 5].
-* [cite_start]**Tax Calculation:** The code uses a combined tax variable (`gst = 0.025 + 0.025`) to apply a percentage to the subtotal[cite: 6]. I will adapt this percentage logic for my project.
-* [cite_start]**Currency Formatting:** The developer uses `'%.2f'` to ensure all totals are displayed with exactly two decimal places[cite: 5, 6]. This is a technique I plan to implement to keep my commerce system professional.
-* [cite_start]**Data Resetting:** The `I_Reset()` function demonstrates how to clear variables and return them to a zero state, which will be essential for my sales loop[cite: 10].
+**Mathematical Logic:** The system uses a specific function called `CostOfOrder()` to handle all price calculations. 
+It calculates the subtotal by multiplying item quantities by a fixed float value (e.g., `BurgerPrice * 70.00`).
+**Tax Calculation:** The code uses a combined tax variable (`gst = 0.025 + 0.025`) to apply a percentage to the subtotal. I will adapt this percentage logic for my project.
+**Currency Formatting:** The developer uses `'%.2f'` to ensure all totals are displayed with exactly two decimal places
+ This is a technique I plan to implement to keep my commerce system professional.
+**Data Resetting:** The `I_Reset()` function demonstrates how to clear variables and return them to a zero state, which will be essential for my sales loop.
 
 ### Adaptations for My Project:
-* [cite_start]**Interface Change:** The reference code uses the `Tkinter` library to create a large windowed GUI[cite: 3]. Since this is outside my current course curriculum, I will convert this logic to a text-based Command Line Interface (CLI).
-* [cite_start]**Input Method:** Instead of using `Entry()` boxes[cite: 15], I will use the `input()` and `int()` functions learned in my recent modules to gather order data from users.
+**Interface Change:** The reference code uses the `Tkinter` library to create a large windowed GUI. Since this is outside my current course curriculum, I will convert this logic to a text-based Command Line Interface (CLI).
+**Input Method:** Instead of using `Entry()` boxes, I will use the `input()` and `int()` functions learned in my recent modules to gather order data from users.
