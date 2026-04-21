@@ -28,7 +28,7 @@ It calculates the subtotal by multiplying item quantities by a fixed float value
 ## Sprint 2 - Development (April 21 - April 23)
 The goal of this sprint is to establish the core logic and user interface for the Coles Commerce System.
 
-- [ ] Task 1: Initialize main application file and foundational variables.
+- [x] Task 1: Initialize main application file and foundational variables.
 - [ ] Task 2: Create the primary interaction loop (while loop) for the menu.
 - [ ] Task 3: Develop sales logic to handle quantities and subtotal calculations.
 - [ ] Task 4: Integrate tax calculations and apply professional float formatting.
