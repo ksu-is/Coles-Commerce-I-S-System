@@ -29,7 +29,16 @@ while True:
     
     if choice == '1':
         print("\nStarting a new sale...")
-    
+        num_burgers = int(input("Enter number of Burgers: "))
+        num_soda = int(input("Enter number of Sodas: "))
+        num_fries = int(input("Enter number of Fries: "))
+        subtotal = (num_burgers * burger_price) + (num_soda * soda_price) + (num_fries * fries_price)
+        total_tax = subtotal * tax_rate
+        final_total = subtotal + total_tax + delivery_fee
+        print("\nSubtotal calculated: Rs. " + str(subtotal))
+        print("Tax: Rs. " + str(total_tax))
+        print("Delivery Fee: Rs. " + str(delivery_fee))
+        print("Final Total: Rs. " + str(final_total))
     elif choice == '2':
         print("\n--- Current Inventory ---")
         print("Burgers: Rs. 70.00")
