@@ -29,7 +29,7 @@ while True:
     
     if choice == '1':
         print("\nStarting a new sale...")
-        # Logic for calculations goes here next
+    
     elif choice == '2':
         print("\n--- Current Inventory ---")
         print("Burgers: Rs. 70.00")
