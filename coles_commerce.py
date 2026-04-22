@@ -18,3 +18,25 @@ total_tax = 0.0
 final_total = 0.0
 
 print("--- Coles Commerce System Initialized ---")
+# Day 2: Commit 3 - Building the Menu Loop
+while True:
+    print("\n--- Main Menu ---")
+    print("1. Process a Sale")
+    print("2. View Inventory Prices")
+    print("3. Exit")
+    
+    choice = input("Select an option (1-3): ")
+    
+    if choice == '1':
+        print("\nStarting a new sale...")
+        # Logic for calculations goes here next
+    elif choice == '2':
+        print("\n--- Current Inventory ---")
+        print("Burgers: Rs. 70.00")
+        print("Soda: Rs. 40.00")
+        print("Fries: Rs. 50.00")
+    elif choice == '3':
+        print("Exiting the system. Have a great day!")
+        break
+    else:
+        print("Invalid selection. Please try again.")
