@@ -26,36 +26,17 @@ while True:
     choice = input("\nSelect an option (1-3): ")
     
     if choice == '1':
-        print("\n--- New Transaction ---")
-        # Collect quantities from user
+        print("\nStarting a new sale...")
         num_burgers = int(input("Enter number of Burgers: "))
         num_soda = int(input("Enter number of Sodas: "))
         num_fries = int(input("Enter number of Fries: "))
-        
-        # Day 2: Commit 4 - Core Math Logic
         subtotal = (num_burgers * burger_price) + (num_soda * soda_price) + (num_fries * fries_price)
-        
-        # Commit 5 - Tax Calculation
         total_tax = subtotal * tax_rate
-        
-        # Commit 7 - Adding Delivery Logic
-        use_delivery = input("Is this for delivery? (y/n): ")
-        
-        print("\n--- Sales Receipt ---")
-        # Using classic % formatting for two decimal places
-        print("Subtotal:     Rs. %.2f" % subtotal)
-        print("Tax (5%%):     Rs. %.2f" % total_tax)
-        
-        if use_delivery.lower() == 'y':
-            final_total = subtotal + total_tax + delivery_fee
-            print("Delivery Fee: Rs. %.2f" % delivery_fee)
-        else:
-            final_total = subtotal + total_tax
-            
-        print("--------------------------------")
-        print("TOTAL:        Rs. %.2f" % final_total)
-        print("--------------------------------")
-
+        final_total = subtotal + total_tax + delivery_fee
+        print("\nSubtotal calculated: Rs. " + str(subtotal))
+        print("Tax: Rs. " + str(total_tax))
+        print("Delivery Fee: Rs. " + str(delivery_fee))
+        print("Final Total: Rs. " + str(final_total))
     elif choice == '2':
         print("\n--- Current Inventory Prices ---")
         print("Burgers: Rs. %.2f" % burger_price)
@@ -74,4 +55,4 @@ while True:
         break
 
     else:
-        print("\n[!] Invalid selection. Please enter 1, 2, or 3.")
+        print("Invalid selection. Please try again.")
