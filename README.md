@@ -1,7 +1,7 @@
 # Coles Commerce Inventory & Sales System
 
 ## Project Description
-Coles Commerce is a Python-based Command Line Interface management tool designed for student organizations and small business owners. The goal is to provide a simple, logic-driven interface to track inventory levels and process sales totals accurately.
+Coles Commerce is a Python-based Terminal Based Interface management tool designed for student organizations and small business owners. The goal is to provide a simple, logic-driven interface to track inventory levels and process sales totals accurately.
 
 ## Target Audience
 * Student entrepreneurs at Kennesaw State University.
