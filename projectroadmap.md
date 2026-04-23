@@ -39,5 +39,5 @@ The goal of this sprint is to establish the core logic and user interface for th
 
  - Resolved `IndentationError` during sales logic implementation.
  - Fixed `ValueError` caused by special character formatting in the tax display.
-- Successfully adapted the mathematical logic from the `udaymistry` reference repository into a functional CLI.
+- Successfully adapted the math logic from the `udaymistry` reference repository into a functional CLI.
 - Plan for Sprint 3 to include persistent file storage for transaction history.
