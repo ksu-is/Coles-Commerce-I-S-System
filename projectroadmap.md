@@ -39,7 +39,7 @@ The goal of this sprint is to establish the core logic and user interface for th
 
 - [x] **Task 1:** Implement Manager Mode for dynamic price and fee setup.
 - [x] **Task 2:** Add input validation to prevent system crashes during setup.
-- [ ] **Task 3:** Create a text file (sales_log.txt) to save transaction history.
+- [x] **Task 3:** Create a text file (sales_log.txt) to save transaction history.
 - [ ] **Task 4:** Design and upload the project marketing slide for upper management.
 
 ### Emerging Tasks
