@@ -48,6 +48,6 @@ The goal of this sprint is to establish the core logic and user interface for th
  - Fixed `ValueError` caused by special character formatting in the tax display.
 - Successfully adapted the math logic from the `udaymistry` reference repository into a functional CLI.
 - Plan for Sprint 3 to include persistent file storage for transaction history.
--Moved price variables from hard-coded constants to user-defined floats.
--Added a system initialization header to separate Admin Setup from the Main Menu.
--Verified tax math remains accurate with new dynamic pricing.
+- Moved price variables from hard-coded constants to user-defined floats.
+- Added a system initialization header to separate Admin Setup from the Main Menu.
+- Verified tax math remains accurate with new dynamic pricing.
