@@ -3,7 +3,7 @@
 # Purpose: A functional POS system for managing sales, taxes, and delivery.
 
 # ==========================================================
-# STEP 1: MANAGER MODE (ADMIN MODE SETUP)
+# MANAGER MODE (ADMIN MODE SETUP)
 # ==========================================================
 print("========================================")
 print("       COLES COMMERCE: ADMIN SETUP      ")
