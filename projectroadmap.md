@@ -38,7 +38,7 @@ The goal of this sprint is to establish the core logic and user interface for th
 ## Sprint 3- Dynamic Sytem and Final Adjustments
 
 - [x] **Task 1:** Implement Manager Mode for dynamic price and fee setup.
-- [ ] **Task 2:** Add "Try/Except" input validation to prevent system crashes during setup.
+- [ ] **Task 2:** Add input validation to prevent system crashes during setup.
 - [ ] **Task 3:** Create a text file (sales_log.txt) to save transaction history.
 - [ ] **Task 4:** Design and upload the project marketing slide for upper management.
 
@@ -51,3 +51,4 @@ The goal of this sprint is to establish the core logic and user interface for th
 - Moved price variables from hard-coded constants to user-defined floats.
 - Added a system initialization header to separate Admin Setup from the Main Menu.
 - Verified tax math remains accurate with new dynamic pricing.
+- Built a Manager Mode with input validation to allow for custom pricing and prevent system crashes.
