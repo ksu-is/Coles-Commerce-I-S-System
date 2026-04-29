@@ -86,6 +86,19 @@ while True:
         print("--------------------------------")
         print("TOTAL:        Rs. %.2f" % final_total)
         print("--------------------------------")
+        # SPRINT 3: SAVE TO FILE 
+        file_path = "sales_log.txt"
+        sales_file = open(file_path, "a")
+        
+        sales_file.write("\n--- Transaction Record ---\n")
+        sales_file.write("Burgers: " + str(num_burgers) + "\n")
+        sales_file.write("Sodas: " + str(num_soda) + "\n")
+        sales_file.write("Fries: " + str(num_fries) + "\n")
+        sales_file.write("Total Revenue: Rs. %.2f\n" % final_total) # Using format for the file too
+        sales_file.write("--------------------------\n")
+        
+        sales_file.close()
+        print("\n[System] Transaction saved to sales_log.txt")
     elif choice == '2':
         print("\n--- Current Inventory Prices ---")
         print("Burgers: Rs. %.2f" % burger_price)
