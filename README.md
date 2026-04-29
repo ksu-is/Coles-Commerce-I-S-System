@@ -11,3 +11,4 @@ Coles Commerce is a Python-based Terminal Based Interface management tool design
 * Real-time inventory tracking using Python lists.
 * Automated sales calculation (including tax).
 * Daily report generation saved to a text file.
+* Manager Admin Pricing ability
