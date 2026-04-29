@@ -1,13 +1,20 @@
-# Project: Coles Commerce Inventory & Sales System
 # Name: Robenson Lebon
 # Purpose: A functional POS system for managing sales, taxes, and delivery.
 
-#  Configuration & Variables ---
-burger_price = 70.00
-soda_price = 40.00
-fries_price = 50.00
-delivery_fee = 30.00
-tax_rate = 0.07  # 7% tax rate updated from %5 to 7% for GA accuracy
+# --- MANAGER MODE: INITIAL SETUP ---
+print("========================================")
+print("       COLES COMMERCE: ADMIN SETUP      ")
+print("========================================")
+
+# Setting dynamic prices 
+burger_price = float(input("Enter current Burger price: "))
+soda_price = float(input("Enter current Soda price: "))
+fries_price = float(input("Enter current Fries price: "))
+delivery_fee = float(input("Enter current Delivery fee: "))
+tax_rate = 0.07 
+
+print("\nSystem initialized. Prices updated successfully.")
+print("========================================\n")
 
 # ---  Main Application Loop ---
 while True:
