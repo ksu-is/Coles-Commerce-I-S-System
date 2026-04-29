@@ -1,21 +1,50 @@
+# Project: Coles Commerce Inventory & Sales System
 # Name: Robenson Lebon
 # Purpose: A functional POS system for managing sales, taxes, and delivery.
 
-# --- MANAGER MODE: INITIAL SETUP ---
+# ==========================================================
+# STEP 1: MANAGER MODE (ADMIN MODE SETUP)
+# ==========================================================
 print("========================================")
 print("       COLES COMMERCE: ADMIN SETUP      ")
 print("========================================")
 
-# Setting dynamic prices 
-burger_price = float(input("Enter current Burger price: "))
-soda_price = float(input("Enter current Soda price: "))
-fries_price = float(input("Enter current Fries price: "))
-delivery_fee = float(input("Enter current Delivery fee: "))
+# Burger Validation
+burger_input = ""
+while not burger_input.isdigit():
+    burger_input = input("Enter Burger price (numbers only): ")
+    if not burger_input.isdigit():
+        print("Invalid! Please enter a whole number.")
+burger_price = float(burger_input)
+
+# Soda Validation
+soda_input = ""
+while not soda_input.isdigit():
+    soda_input = input("Enter Soda price (numbers only): ")
+    if not soda_input.isdigit():
+        print("Invalid! Please enter a whole number.")
+soda_price = float(soda_input)
+
+# Fries Validation
+fries_input = ""
+while not fries_input.isdigit():
+    fries_input = input("Enter Fries price (numbers only): ")
+    if not fries_input.isdigit():
+        print("Invalid! Please enter a whole number.")
+fries_price = float(fries_input)
+
+# Delivery Fee Validation
+delivery_input = ""
+while not delivery_input.isdigit():
+    delivery_input = input("Enter Delivery Fee (numbers only): ")
+    if not delivery_input.isdigit():
+        print("Invalid! Please enter a whole number.")
+delivery_fee = float(delivery_input)
+
 tax_rate = 0.07 
 
 print("\nSystem initialized. Prices updated successfully.")
 print("========================================\n")
-
 # ---  Main Application Loop ---
 while True:
     #  - Resetting totals for each new session
