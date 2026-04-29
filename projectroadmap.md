@@ -1,10 +1,10 @@
 # Project Roadmap
-
+## Sprint 1- Basis of Program
 - [x] Create GitHub Repository and join KSU-IS organization.
 - [x] Initialize README.md with project description.
 - [x] Research and clone the udaymistry POS repository for evaluation.
 - [x] Complete evaluation of existing code and document findings.
-- [ ] Plan basic logic for the main menu loop.
+- [x] Plan basic logic for the main menu loop.
 
 ## Codebase Evaluation
 I evaluated the **udaymistry/Basic-Point-On-Sale-System** repository. 
@@ -25,7 +25,7 @@ It calculates the subtotal by multiplying item quantities by a fixed float value
 **Interface Change:** The reference code uses the `Tkinter` library to create a large windowed GUI. Since this is outside my current course curriculum, I will convert this logic to a text-based Command Line Interface (CLI).
 **Input Method:** Instead of using `Entry()` boxes, I will use the `input()` and `int()` functions learned in my recent modules to gather order data from users.
 
-## Sprint 2 - Development (April 21 - April 24)
+## Sprint 2 - Development 
 The goal of this sprint is to establish the core logic and user interface for the Coles Commerce System.
 
 - [x] **Task 1:** Initialize main application file and foundational variables.
@@ -33,7 +33,14 @@ The goal of this sprint is to establish the core logic and user interface for th
 - [x] **Task 3:** Develop sales logic to handle quantities and subtotal calculations.
 - [x] **Task 4:** Integrate tax calculations and apply professional float formatting (`%.2f`).
 - [x] **Task 5:** Implement logic for a delivery fee and session resets.
-- [x] **Task 6:** Document final progress for the sprint and confirm visibility in the ksu-is organization.
+- [x] **Task 6:** Document progress for the sprint and confirm visibility in the ksu-is organization.
+
+## Sprint 3- Dynamic Sytem and Final Adjustments
+
+[x] **Task 1:** Implement Manager Mode for dynamic price and fee setup.
+[ ] **Task 2:** Add "Try/Except" input validation to prevent system crashes during setup.
+[ ] **Task 3:** Create a text file (sales_log.txt) to save transaction history.
+[ ] **Task 4:** Design and upload the project marketing slide for upper management.
 
 ### Emerging Tasks
 
@@ -41,3 +48,6 @@ The goal of this sprint is to establish the core logic and user interface for th
  - Fixed `ValueError` caused by special character formatting in the tax display.
 - Successfully adapted the math logic from the `udaymistry` reference repository into a functional CLI.
 - Plan for Sprint 3 to include persistent file storage for transaction history.
+-Moved price variables from hard-coded constants to user-defined floats.
+-Added a system initialization header to separate Admin Setup from the Main Menu.
+-Verified tax math remains accurate with new dynamic pricing.
