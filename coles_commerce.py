@@ -51,7 +51,7 @@ while True:
     subtotal = 0.0
     total_tax = 0.0
     final_total = 0.0
-
+    # Sprint 2: BASE MENU CODE
     print("\n================================")
     print("   COLES COMMERCE MAIN MENU   ")
     print("================================")
