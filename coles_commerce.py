@@ -3,7 +3,7 @@
 # Purpose: A functional POS system for managing sales, taxes, and delivery.
 
 # ==========================================================
-# MANAGER MODE (ADMIN MODE SETUP)
+# STEP 1: MANAGER MODE (ADMIN MODE SETUP)
 # ==========================================================
 print("========================================")
 print("       COLES COMMERCE: ADMIN SETUP      ")
@@ -51,15 +51,16 @@ while True:
     subtotal = 0.0
     total_tax = 0.0
     final_total = 0.0
-    # Sprint 2: BASE MENU CODE
+
     print("\n================================")
     print("   COLES COMMERCE MAIN MENU   ")
     print("================================")
     print("1. Process a New Sale")
     print("2. View Inventory Prices")
     print("3. Exit System")
-    
-    choice = input("\nSelect an option (1-3): ")
+    print("4. Clear Sales Log (Admin Only)") # SPRINT 3: LOG CLEAR OPTION
+    print("5. View Sales Log") # SPRINT 3: LOG VIEW OPTION
+    choice = input("\nSelect an option (1-5): ")
     
     if choice == '1':
         print("\n--- New Transaction ---")
@@ -86,7 +87,7 @@ while True:
         print("--------------------------------")
         print("TOTAL:        Rs. %.2f" % final_total)
         print("--------------------------------")
-       # SPRINT 3: INPUT SAVING OPTION
+        # SPRINT 3: INPUT SAVING OPTION 
         save_choice = input("Would you like to save this transaction to the log? (y/n): ")
         
         if save_choice.lower() == 'y':
@@ -114,12 +115,28 @@ while True:
     elif choice == '3':
         # Exit Logic
 
-        print("\n" * 2) 
+        print("\n" * 2) # Adds two blank lines
         print("========================================")
         print("Exiting Coles Commerce. System shutdown successful.")
         print("========================================")
         print("\n" * 2)
         break
 
+    elif choice == '4': # SPRINT 3: LOG CLEAR OPTION
+        confirm = input("Are you sure you want to delete ALL logs? (y/n): ")
+        if confirm.lower() == 'y':
+            sales_file = open("sales_log.txt", "w")
+            sales_file.write("--- LOGS CLEARED ---\n")
+            sales_file.close()
+            print("\n[!] All saved transactions have been deleted.")
+        else:
+            print("\nAction cancelled.")
+    elif choice == '5': 
+        print("\n--- FULL SALES HISTORY ---")
+        sales_file = open("sales_log.txt", "r") # 'r' means read mode
+        content = sales_file.read()
+        print(content)
+        sales_file.close()
+        print("--------------------------")
     else:
         print("Invalid selection. Please try again.")
