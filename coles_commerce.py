@@ -114,7 +114,7 @@ while True:
     elif choice == '3':
         # Exit Logic
 
-        print("\n" * 2) # Adds two blank lines
+        print("\n" * 2) 
         print("========================================")
         print("Exiting Coles Commerce. System shutdown successful.")
         print("========================================")
