@@ -40,7 +40,8 @@ The goal of this sprint is to establish the core logic and user interface for th
 - [x] **Task 1:** Implement Manager Mode for dynamic price and fee setup.
 - [x] **Task 2:** Add input validation to prevent system crashes during setup.
 - [x] **Task 3:** Create a text file (sales_log.txt) to save transaction history.
-- [ ] **Task 4:** Design and upload the project marketing slide for upper management.
+- [x] **Task 4:** Design and upload the project marketing slide for upper management.
+      **marketing slide link**-https://kennesawedu-my.sharepoint.com/:p:/r/personal/rlebon1_students_kennesaw_edu/Documents/Final%20Coles%20Commerce%20I%26S%20-%20Copy.pptx?d=wf4d0f0aa4cee45c8ba044dd86f69a977&csf=1&web=1&e=zxcsRt
 
 ### Emerging Tasks
 
